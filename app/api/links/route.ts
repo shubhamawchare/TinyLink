@@ -43,7 +43,7 @@ export async function POST(req: Request) {
     }
 
     const existing = await pool.query("SELECT id FROM links WHERE code = $1", [code]);
-    if (existing.rowCount > 0) {
+    if (existing.rowCount ?? 0) {
       return NextResponse.json({ error: "Code already exists" }, { status: 409 });
     }
 
