@@ -1,17 +1,17 @@
-🌐 **TinyLink — Modern URL Shortener (Next.js 16 + Neon Postgres + Vercel)**
+## 🌐 TinyLink — Modern URL Shortener (Next.js 16 + Neon Postgres + Vercel)
 
-## A fully functional, production-ready Bit.ly-style URL shortener built as part of a technical take-home challenge.
+ **A fully functional, production-ready Bit.ly-style URL shortener built as part of a technical take-home challenge.**
 
 ---
 
-📸 **Screenshots**
+## 📸 Screenshots
 <img width="1313" height="835" alt="image" src="https://github.com/user-attachments/assets/a52cef26-1c96-4f48-9ca1-9210c586b459" />
 
 ---
 
-🚀 **Project Overview**
+## 🚀 Project Overview
 
-## TinyLink is a lightweight URL-shortening platform where users can:
+ **TinyLink is a lightweight URL-shortening platform where users can:**
 
 🔗 Shorten long URLs
 ✏️ Provide a custom short code
@@ -24,7 +24,7 @@
 
 ---
 
-🧱 **Architecture Overview**
+## 🧱 Architecture Overview
 Next.js 16 (App Router)
 └── app/
     ├── page.tsx                → Dashboard UI
@@ -40,8 +40,8 @@ Next.js 16 (App Router)
 
 ---
 
-🛠 **Tech Stack**
-## Frontend / Backend
+## 🛠 Tech Stack
+ **Frontend / Backend**
 
 - Next.js 16 (App Router)
 - Server Components + Route Handlers
@@ -61,9 +61,9 @@ Next.js 16 (App Router)
 
 ---
 
-🗄️ **Database Schema**
+## 🗄️ Database Schema
 
-## Neon schema:
+ **Neon schema:**
 
 CREATE TABLE IF NOT EXISTS links (
   id SERIAL PRIMARY KEY,
@@ -76,9 +76,9 @@ CREATE TABLE IF NOT EXISTS links (
 
 ---
 
-🔌 **API Documentation**
+## 🔌 API Documentation
 
-## 📍 1. Create Short Link
+ **📍 1. Create Short Link**
 POST /api/links
 Request Body:
 {
@@ -101,7 +101,7 @@ Success Example:
   "last_clicked_at": null
 }
 
-## 📍 2. List all links
+ **📍 2. List all links**
 GET /api/links
 
 Returns array:
@@ -117,25 +117,25 @@ Returns array:
   }
 ]
 
-## 📍 3. Get stats for a link
+**📍 3. Get stats for a link**
 GET /api/links/:code
 Response:
 Status	Meaning
 200	OK
 404	Not found
 
-## 📍 4. Delete a link
+ **📍 4. Delete a link**
 DELETE /api/links/:code
 Response:
 { "ok": true }
 
-## 📍 5. Redirect
+**📍 5. Redirect**
 GET /:code
 302 redirect
 Increments click count
 Updates last-click timestamp
 
-## 📍 6. Health Check
+**📍 6. Health Check**
 GET /healthz
 {
   "ok": true,
@@ -147,7 +147,8 @@ GET /healthz
 ---
 
 
-🧪 **Testing Instructions**
+## 🧪 Testing Instructions
+
 1. Create link
 POST http://localhost:3000/api/links
 
@@ -165,7 +166,8 @@ GET http://localhost:3000/healthz
 
 ---
 
-⚙️ **Local Development Setup**
+## ⚙️ Local Development Setup
+
 🔧 Install dependencies:
 npm install
 
@@ -181,18 +183,18 @@ npm run dev
 
 ---
 
-📈 **Future Improvements**
-🔐 **Add user authentication**
-📊 **Add click analytics graph**
-🔁 **Allow editing short links**
-🎛 **Add rate-limiting / anti-abuse**
-🎨 **Add dark/light mode**
-🧪 **Add automated Cypress tests**
+## 📈 Future Improvements
+## 🔐 Add user authentication
+## 📊 Add click analytics graph
+## 🔁 Allow editing short links
+## 🎛 Add rate-limiting / anti-abuse
+## 🎨 Add dark/light mode
+## 🧪 Add automated Cypress tests
 
 ---
 
-👤 **Author**
+## 👤 Author
 
-Shubham Awchare
-Manchester, UK
-Game Developer & Software Engineer
+**Shubham Awchare**
+**Manchester, UK**
+**Game Developer & Software Engineer** 
