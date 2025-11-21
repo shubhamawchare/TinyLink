@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { pool } from "@/lib/db";
 import { generateRandomCode, isValidCode, isValidUrl, normalizeUrl } from "@/lib/validators";
-import type { Link } from "@/app/api/types/link";
+import type { Link } from "@/app/types/link";
 
 // GET /api/links  → list all links
 export async function GET() {

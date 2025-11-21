@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import type { Link } from '@/types/link';
+import type { Link } from '@/app/types/link';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 

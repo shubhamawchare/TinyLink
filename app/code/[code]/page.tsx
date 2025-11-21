@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import type { Link } from '@/types/link';
+import type { Link } from '@/app/types/link';
 
 type Status = 'loading' | 'success' | 'error';
 
